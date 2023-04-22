@@ -1,0 +1,18 @@
+.layout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    > div {
+        min-height: 100vh;
+    }
+
+    main {
+        width: 100%;
+
+        .search {
+            padding: 15px 50px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+    }
+}

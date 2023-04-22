@@ -1,0 +1,56 @@
+.tags {
+    margin-top: 30px;
+
+    .wrapper {
+
+        // wrapper for tags
+        > div {
+            margin-top: 15px;
+        }
+
+        h5 {
+            font-weight: 500;
+        }
+
+        .item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 16px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+            transform: translateX(-20px);
+            border: 2px solid transparent;
+
+            &:hover {
+                
+                span {
+                    opacity: 0.6;
+                }
+            }
+
+            .mark {
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+            }
+
+            span {
+                transition: .2s ease-in-out;
+                margin-left: 10px;
+                font-size: 16px;
+            }
+        }
+
+        .active {
+            transform: translateX(0);
+            border: 2px solid #7367F0;
+
+            &:hover {
+                transform: translateX(0);
+            }
+        }
+    }
+}

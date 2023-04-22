@@ -1,0 +1,41 @@
+.button {
+    padding: 14px 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    background: transparent;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.2);
+    transition: .2s ease-in-out;
+}
+
+.filled {
+    background: #7367F0;
+
+    &:hover {
+        background: #8479F5;
+    } 
+}
+
+.cancel {
+    background: transparent;
+    border: 2px solid #EA5455;
+    color: #EA5455;
+
+    &:hover {
+        background: #EA5455;
+        color: #fff;
+    }
+}
+
+.outline {
+    border: 2px solid #8479F5;
+    color: #8479F5;
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+}

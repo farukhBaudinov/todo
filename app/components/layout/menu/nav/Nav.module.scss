@@ -1,0 +1,53 @@
+.nav {
+    margin-top: 30px;
+
+    .wrapper {
+
+        .item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 12px 0;
+
+            span, path { transition: .1s ease-in-out; }
+
+            &:hover {
+                span {
+                    color: #9B51E0;
+                }
+
+                path {
+                    fill: #9B51E0;
+                }
+            }
+
+            span {
+                margin-left: 10px;
+                padding: 2px;
+                font-weight: 500;
+            }
+        }
+
+        .active {
+            
+            &::before {
+                content: '';
+                width: 4px;
+                height: 40px;
+                background: #7367F0;
+                position: absolute;
+                left: 0;
+                border-radius: 20px;
+            }
+
+
+            span {
+                color: #9B51E0;
+            }
+
+            path {
+                fill: #9B51E0;
+            }
+        }
+    }
+}

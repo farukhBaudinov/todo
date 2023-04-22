@@ -1,0 +1,109 @@
+.cardTask {
+    padding: 20px;
+    transition: .2s ease-in-out;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+    &:hover {
+        background: #31394C;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > div {
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .left {
+            .title {
+                margin-left: 20px;
+                font-weight: 400;
+                color: #B4B7BD;
+            }
+
+            .important {
+                font-weight: 600;
+                color: #F2C94C;
+            }
+        }
+
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .tags {
+                margin-left: 30px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                // tag
+                >div {
+                    padding: 8px 14px;
+                    border-radius: 20px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin: 0 5px;
+                }
+
+                .green {
+                    background: rgba(40, 199, 111, 0.12);
+                    color: #28C76F;
+                }
+
+                .purple {
+                    background: rgba(39, 114, 8, 0.12);
+                    color: #7367F0;
+                }
+
+                .orange {
+                    background: rgba(255, 159, 67, 0.12);
+                    color: #FF9F43;
+                }
+
+                .red {
+                    background: rgba(234, 84, 85, 0.12);
+                    color: #EA5455;
+                }
+            }
+
+            .date {
+                color: #676D7D;
+                margin-left: 15px;
+            }
+
+            .basket {
+                margin-left: 20px;
+                opacity: 0.6;
+                cursor: pointer;
+                transition: .2s ease-in-out;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .dots, .rotate {
+                margin-left: 20px;
+                opacity: 0.6;
+                transition: .2s ease-in-out;
+                cursor: move;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .rotate {
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
